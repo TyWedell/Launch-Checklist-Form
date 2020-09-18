@@ -67,6 +67,9 @@ window.addEventListener('load', function () {
          launchStatus.style.color = 'red'
          event.preventDefault()
       } else {
+         fuelStatus.innerHTML = 'Fuel level high enough for launch';
+         cargoStatus.innerHTML = 'Cargo mass low enough for launch';
+         faultyItems.style.visibility = 'visible';
          launchStatus.innerHTML = 'Shuttle is ready for launch';
          launchStatus.style.color = 'green';
          event.preventDefault()
